@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id = "yash"> here i will use getElement </p>
+        <p1 class = "yg">here i will use getelem by class</p1>
+        <p2 class= "start" > this piece of code for query selector and querySelectorall</p2>
+        <input type = "text" id = "texthere" value = "YASH_G" ></input>
+        <script>
+            document.getElementById("yash").innerHTML="YASH";
+            document.getElementById("yash").style.color="red";
+            document.getElementById("texthere").value="my name is";
+            document.getElementsByTagName("p")[0].innerHTML = "YYYash";
+            document.getElementsByClassName("yg")[0].innerHTML="yash_gaikwad";
+            var t = document.querySelector(".start");
+            var y = document.querySelectorAll("p2.start");
+            document.getElementById("yash").innerHTML= 'was made by yash gaikwad'+ y[0].innerHTML;
+
+        </script>
+        <p3>now I will use event's for example browser events </p3>
+        <div onclick="alert('eventt1')">
+
+        <em> when i will click at this <code>{withthe help of }EM</code>,the event runs.</em>
+        </div>
+        <p4>Bubbbling : is a kind of event propogation, the event first works on the innermost target elem and then succussively work through its way to the root or parent moving upwards till html.</p4>
+        <p5>now i will be performing bbubling with 4 nested elements </p5>
+        <style>
+            body *{
+                margin : 70px;
+                border : 2px red;
+            
+            }
+
+        
+        </style>
+        <body onclick = "alert('when you will click it it will stop bubbling and will stop it reaching here')">
+            <button onclick = "event.stopPropagation()">stop_Bubbbling</button> 
+
+        </body>
+        <form onclick = "alert(' root')">
+            <div onclick = "alert('2nd parent')">
+                <p onclick = "alert('1st parent')"></p>
+                <p1 onclick = "alert('first')"></p1>
+                
+            </div>
+            <p>I can also use event.stopprogation to stop bubbbling to the top for example </p>
+            <p1>i will use stop bubblig button after style now it will stop at form and will not go till html and call every handler in its way</p1>
+
+        </form> 
+        <p6>in Cpturing : the event goes down the elemnet means wrt DOM it start with the window then t document then to html then to body then form and finally to the target event </p>
+        <script>
+            for (let e of document.querySelectorAll(*)){
+                e.addEventListener("click",y => console.log("CApturing:", elem.tagName), true);
+            }
+        </script>
+        <p7>in this way caputurung will from root to target elem</p7>
+        <p8>Event delegation is a technique by which i can add a single event handler to a parent element and can avoid adding even handler to multiple child elem</p8>    
+        <p9>im using just a single button run  and when i will click on ot it will prompt a message on my browser running ----please---wait</p9>
+        
+        <div id = "ED">
+            <button data-action = 'start'> click to run the code</button>
+        </div>  
+        <script>
+            class ED(
+                constructor(elem){          // created a constructor
+                    this.elem  elem;  // this points 
+                    elem.onClick = this.onclick.bind(this); // using bind to  
+                }
+                run(){
+                    alert('running');
+                }
+            )
+        </script>
+        <p10>Creating a brwoser custom event and dispatching it</p10>
+        <p11>in custom events not only we assign handlers but also generate from javascript</p11>
+        <p12>not only i can generate events but also use built in events like mouseip ,click ad more</p12>
+        <button id = "z " onclick = "alert('brwoser event');"> BE</button>
+        <h1 id = "y"> action go</h1>
+        <script>
+
+            let event = new Event("event_click it"); // creating a new event 
+            z.dispatchEvent(event);    // dispatching event
+            // also ican use here event.preventDefault(); to stop an event from happenning
+            y.addEventListener("yash" , function(event){   // adding event which attaches an event handler to document 
+                alert(event.deatil.name);
+            });
+            y.dispatchEvent(new CustomEvent("YG",{  // dispatching custom event
+                deatil: {name : "Custom BY YASH"}    // as an sdditonal property in custom event we can pass any onformation we want to pass with the event
+            }));
+                
+        
+        </script> 
+        </body>
+
+</html>
