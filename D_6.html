@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <form onsubmit="alert('submit!');">
+            <p>"the focus wil be hereron first"</p>
+
+            1: Enter in the input field <input type="text" value="text"><br>  
+            <p> "now 1st will be blured or non focused and focus will change to second a;so event is changing"</p>
+            2: Click "submit": <input type="submit" value="Submit">
+          </form>
+          <p>all the content are above here abouve script son it can see them also it wont stop page from loadding or downloading</p> 
+          <script>
+            
+            
+            window.onload = function() { // it will work same  as window.addEvenListcer
+              alert('Page loaded');
+               
+          
+              // now image will be loaded 
+              alert(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
+            };
+     
+            window.unload = function(){
+               navigator.sendBeacon("it will send the alnalytics"JSON.stringfly()) 
+            };
+            window.onbeforeunload = function() {
+               return "are you sure u wantr to leave the page ?";
+               <p> "now a visitor tries to go to any other window onberforunload will give a mesgae like when we sigin and then it says are you sure you want to leave this page"</p>
+
+            };
+          </script>
+          <p > "now i will be giving image source"</p>
+          <img id = "img" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FReal_Madrid_CF&psig=AOvVaw1nAmR3HXC7umhMMmWg7HjE&ust=1622623646047000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCNCUiaSG9vACFQAAAAAdAAAAABAD" >
+          <p> "window.onload waits for allt he iamges also it load sll styles , images and all other resources"</p>
+          <script defer src = "https://www.realmadrid.JS"></script>
+
+          <!--visible immediately -->
+          <p>...content after script...</p>  
+           <!--now using defer we can solve the problme and also it tells brwoser not to wait for the script-->>
+
+    
+     </body>
+
+
+</html>
+
