@@ -1,0 +1,19 @@
+<!--call bacsks are used as a function passed as ain argumnet to another function-->
+<!DOCTYPE html >
+<html>
+    <body>
+        <p> i am using callback function to display the sum of user calculation</p>
+        <p id='y1' ></p>
+        <script>
+            function ddisplay_1("name") {
+                document.getElementById('y1').innerHTML = yash;
+
+            }
+            function Finale(n1,n2,myCallback) {
+                var s = n1+n2;
+                myCallback(s);
+            }
+            my Finale( 10 ,12, ddisplay("yash") )
+        </script>
+    </body>
+</html>
