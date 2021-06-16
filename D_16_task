@@ -1,0 +1,35 @@
+<template>
+<div id = "app">
+<h2 v-for="club in clubs" :key="club">{{club}}</h2>
+<img alt ="Choose your jersey" src="./assets/one.jpeg">
+<img alt ="choose you clubs" src="./assets/two.jpeg">
+<img alt ="Define your Game" src="./assets/three.jpeg">
+</div>
+</template>
+
+<script>
+//import HelloWorld from './components/HelloWorld.vue'
+
+export default {
+  name: 'App',
+
+  data(){
+    return{
+      clubs: ['Real madrid ', 'FCB', 'PSG', 'Bayern' ]
+
+
+    }
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
