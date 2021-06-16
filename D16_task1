@@ -1,0 +1,79 @@
+<template>
+
+
+<div id = "app">
+
+<h1>the Jearsey store</h1> 
+<img width =1500px src="./assets/three.jpeg">
+<p>Club Jerseys Availiable</p>
+<h2 v-for="club in clubs" :key="club">{{club}}</h2>
+<h3 v-for= "img in images" :key="img">{{img}}</h3>
+<div>
+     <img src="./assets/real.jpeg">
+     <p>Real Madrid</p>
+</div>
+<div>
+     <button value="ADd ">ADD</button>
+</div>
+<div>
+     <img src="./assets/ars.jpeg">
+     <p>Arsenal</p>
+</div>
+<div>
+     <button value="ADd ">ADD</button>
+</div>
+<div>
+     <img src="./assets/psg.jpeg">
+     <p>PSG</p>
+</div>
+<div>
+     <button value="ADd ">ADD</button>
+</div>
+
+<div>
+     <img src="./assets/bayern.jpeg">
+     <p>Bayern</p>
+</div>
+<div>
+     <button value="ADd ">ADD</button>
+</div>
+
+
+
+</div>
+
+
+
+</template>
+
+<script>
+//import HelloWorld from './components/HelloWorld.vue'
+
+export default {
+  name: 'App',
+
+  data(){
+    return{
+      clubs: ['Real madrid ', 'Aresnal', 'PSG', 'Bayern' ]
+       
+
+    }
+  }
+}
+
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+
+
+
+
+}
+</style>
